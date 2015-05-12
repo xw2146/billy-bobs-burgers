@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 960px;
+	margin:0 auto;
+}
+header{
+}
+
+.row{
+	clear: both;
+	display: block;
+	margin-bottom: 2%
+}
+
+.row:after{
+	content: "hello";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+[class*="col-"]{
+	float: left;
+	margin-left: 2%;
+	background: aqua;
+
+}
+
+[class*"col-"]:first-child{
+	margin-left: 0;
+}
+
+.col-4{
+	width:32%;
+}
+
+section{
+	float: left;
+	width: 32%;
+	padding: 2%;
+	border: 1px solid black;
+	margin-left: 2%;
+}
+
+section:first-child{
+	margin-left: 0;
+}
+
+
+
+footer{
+	clear: both;
+}
+
+
